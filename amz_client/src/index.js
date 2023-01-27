@@ -10,7 +10,7 @@ import ContextProvider from './Components/Context/ContextProvider';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ContextProvider>
-    <BrowserRouter>
+    <BrowserRouter basename='/' >
       <Provider store={store} >
         <App />
       </Provider>
